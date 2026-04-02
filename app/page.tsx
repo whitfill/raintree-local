@@ -303,8 +303,9 @@ export default function HomePage() {
               <p className="text-sm text-white/40">Takes less than 24 hours. No obligation.</p>
             </div>
             <form
-              action="https://formspree.io/f/xpwzgqkl"
+              action="mailto:mark@raintreelocal.com"
               method="POST"
+              encType="text/plain"
               className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 space-y-4 border border-white/20"
             >
               <div className="grid grid-cols-2 gap-3">

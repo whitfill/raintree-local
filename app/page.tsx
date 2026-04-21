@@ -60,6 +60,7 @@ export default function HomePage() {
           <div className="hidden md:flex items-center gap-6 text-sm">
             <a href="#services" className="text-charcoal-light hover:text-forest transition-colors">Services</a>
             <a href="#pricing" className="text-charcoal-light hover:text-forest transition-colors">Pricing</a>
+            <a href="/blog" className="text-charcoal-light hover:text-forest transition-colors">Blog</a>
             <a href="#about" className="text-charcoal-light hover:text-forest transition-colors">About</a>
             <a href="#contact" className="bg-forest text-white px-4 py-2 rounded-lg font-medium hover:bg-forest-light transition-colors">Get Started</a>
           </div>
@@ -519,11 +520,64 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ===== AREAS WE SERVE ===== */}
+      <section className="py-16 bg-forest/5">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <span className="text-gold text-xs font-semibold uppercase tracking-[0.2em]">Service Areas</span>
+          <h2 className="text-2xl font-bold text-charcoal mt-3 mb-2">We serve small businesses across Central Texas.</h2>
+          <p className="text-charcoal-light mb-8">Based in the Round Top area. Working with businesses from Fredericksburg to Bryan–College Station.</p>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { label: "Round Top", href: "/locations/round-top" },
+              { label: "Bryan–College Station", href: "/locations/bryan-college-station" },
+              { label: "Brenham", href: "/locations/brenham" },
+              { label: "Bastrop", href: "/locations/bastrop" },
+              { label: "Fredericksburg", href: "/locations/fredericksburg" },
+            ].map((loc) => (
+              <a key={loc.href} href={loc.href} className="px-5 py-2.5 border border-forest/20 rounded-full text-sm text-charcoal hover:border-forest hover:text-forest hover:bg-white transition-all">
+                {loc.label}
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== BLOG PREVIEW ===== */}
+      <section className="py-16">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="flex items-end justify-between mb-8">
+            <div>
+              <span className="text-gold text-xs font-semibold uppercase tracking-[0.2em]">Resources</span>
+              <h2 className="text-2xl font-bold text-charcoal mt-2">Free guides for Texas small businesses.</h2>
+            </div>
+            <a href="/blog" className="text-forest text-sm font-semibold hover:underline hidden sm:block">View all &rarr;</a>
+          </div>
+          <div className="grid md:grid-cols-3 gap-5">
+            {[
+              { title: "Why Your GBP Isn't in the Top 3 (And How to Fix It)", href: "/blog/why-google-business-profile-not-in-map-pack", category: "Google Business Profile" },
+              { title: "5 AI Tools That Can Give You 5 Hours a Week Back", href: "/blog/ai-tools-small-business-time-savings", category: "AI & Automation" },
+              { title: "The Pinterest Strategy Most Texas Businesses Are Missing", href: "/blog/pinterest-strategy-texas-boutiques-tourism", category: "Social Media" },
+            ].map((post) => (
+              <a key={post.href} href={post.href} className="group block border border-forest/10 rounded-xl p-5 hover:border-forest/30 hover:shadow-sm transition-all bg-white">
+                <span className="text-xs font-semibold uppercase tracking-wider text-gold">{post.category}</span>
+                <h3 className="text-base font-bold text-charcoal group-hover:text-forest transition-colors mt-2 leading-snug">{post.title}</h3>
+              </a>
+            ))}
+          </div>
+          <div className="text-center mt-6 sm:hidden">
+            <a href="/blog" className="text-forest text-sm font-semibold hover:underline">View all articles &rarr;</a>
+          </div>
+        </div>
+      </section>
+
       {/* ===== FOOTER ===== */}
       <footer className="bg-forest-dark text-white/40 py-8">
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
           <p>&copy; {new Date().getFullYear()} Raintree Marketing Services. All rights reserved.</p>
-          <a href="mailto:mark@raintreems.com" className="hover:text-gold transition-colors">mark@raintreems.com</a>
+          <div className="flex items-center gap-6">
+            <a href="/blog" className="hover:text-white/60 transition-colors">Blog</a>
+            <a href="mailto:mark@raintreems.com" className="hover:text-gold transition-colors">mark@raintreems.com</a>
+          </div>
         </div>
       </footer>
     </>

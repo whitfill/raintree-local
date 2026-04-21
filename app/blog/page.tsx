@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
-  title: "Blog | Raintree Local",
-  description: "Local SEO tips, Google Business Profile guides, and marketing strategies for small businesses in home services and specialty retail.",
-  alternates: { canonical: "/blog" },
+  title: "Blog | Raintree Marketing Services",
+  description: "Local SEO tips, Google Business Profile guides, AI tools, and digital marketing strategies for Texas small businesses.",
+  alternates: { canonical: "https://www.raintreems.com/blog" },
 };
 
 export default function BlogPage() {
@@ -15,10 +15,10 @@ export default function BlogPage() {
     <>
       <nav className="fixed top-0 w-full bg-warm-white/90 backdrop-blur-sm z-50 border-b border-forest/10">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="text-forest font-bold text-lg tracking-tight">Raintree Local</Link>
+          <Link href="/" className="text-forest font-bold text-lg tracking-tight">Raintree<span className="font-normal text-charcoal-light"> Marketing Services</span></Link>
           <div className="hidden md:flex items-center gap-6 text-sm">
             <Link href="/blog" className="text-forest font-medium">Blog</Link>
-            <Link href="/#contact" className="bg-forest text-white px-4 py-2 rounded-lg font-medium hover:bg-forest-light transition-colors">Free Audit</Link>
+            <Link href="/#contact" className="bg-forest text-white px-4 py-2 rounded-lg font-medium hover:bg-forest-light transition-colors">Get Started</Link>
           </div>
         </div>
       </nav>

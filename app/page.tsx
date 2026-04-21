@@ -1,16 +1,56 @@
 export default function HomePage() {
   return (
     <>
-      {/* JSON-LD */}
+      {/* JSON-LD: LocalBusiness */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         name: "Raintree Marketing Services",
-        description: "Digital marketing and AI consulting for small businesses in Texas. Local SEO, Google Business Profile, and AI readiness assessments.",
-        url: "https://raintreems.com",
+        description: "Digital marketing and AI consulting for small businesses in Texas. Local SEO, Google Business Profile optimization, and AI readiness assessments.",
+        url: "https://www.raintreems.com",
         email: "mark@raintreems.com",
-        areaServed: "Texas",
+        areaServed: { "@type": "State", name: "Texas" },
         founder: { "@type": "Person", name: "Mark Whitfill" },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Assessment Services",
+          itemListElement: [
+            {
+              "@type": "Offer",
+              name: "Digital Visibility Assessment",
+              description: "A scored audit of your Google presence, website, social media, and local search visibility — delivered within 48 hours.",
+              price: "500",
+              priceCurrency: "USD",
+            },
+            {
+              "@type": "Offer",
+              name: "AI Readiness Assessment",
+              description: "A 45-minute discovery call followed by a specific report identifying where AI and automation can save your team the most time.",
+              price: "500",
+              priceCurrency: "USD",
+            },
+            {
+              "@type": "Offer",
+              name: "Full Business Audit",
+              description: "Both the Digital Visibility Assessment and AI Readiness Assessment bundled together.",
+              price: "750",
+              priceCurrency: "USD",
+            },
+          ],
+        },
+      }) }} />
+
+      {/* JSON-LD: FAQ */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+          { "@type": "Question", name: "Which assessment should I start with?", acceptedAnswer: { "@type": "Answer", text: "If your biggest problem is that new customers can't find you online — start with the Digital Visibility Assessment. If your biggest problem is that you and your team are buried in manual, repetitive work — start with the AI Readiness Assessment." } },
+          { "@type": "Question", name: "Can I do both assessments?", acceptedAnswer: { "@type": "Answer", text: "Yes, and many clients do. They're solving different problems. The Visibility Assessment looks outward — how the world sees your business. The AI Assessment looks inward — how your business actually runs." } },
+          { "@type": "Question", name: "Why start with an assessment instead of just hiring you?", acceptedAnswer: { "@type": "Answer", text: "Because we don't know exactly where your gaps are until we look. The assessment tells us both — you get a specific diagnosis, and the $500 comes off the full engagement price if you sign within 30 days." } },
+          { "@type": "Question", name: "Do I need to be a Round Top vendor to work with you?", acceptedAnswer: { "@type": "Answer", text: "No. Round Top is our home base, but we work with any Texas small business — home services, retail, professional services, restaurants, real estate. If you have 5–50 employees and you're underserved by the big agencies, we can help." } },
+          { "@type": "Question", name: "How long before I see results?", acceptedAnswer: { "@type": "Answer", text: "Google Business Profile improvements typically show movement within 30–60 days. AI and automation wins can show results in the first week. SEO and Pinterest compound over 3–6 months." } },
+        ],
       }) }} />
 
       {/* Nav */}

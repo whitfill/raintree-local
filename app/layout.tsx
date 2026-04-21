@@ -14,14 +14,18 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://raintreems.com"),
-  title: "Raintree Marketing Services | Digital Visibility for Small Businesses",
+  metadataBase: new URL("https://www.raintreems.com"),
+  title: "Raintree Marketing Services | Texas Small Business SEO & AI",
   description:
-    "Raintree Marketing Services helps small businesses get found on Google. Local SEO, Google Business Profile optimization, review management, and content — done for you.",
+    "Texas small businesses hire Raintree to get found on Google and save time with AI. Start with a $500 Digital Visibility or AI Readiness Assessment.",
+  alternates: {
+    canonical: "https://www.raintreems.com",
+  },
   openGraph: {
     title: "Get Found on Google | Raintree Marketing Services",
-    description: "Digital visibility for specialty retail, antique vendors, boutiques, and local businesses in Texas. Start with a $500 audit.",
-    url: "https://raintreems.com",
+    description:
+      "Digital visibility and AI consulting for Texas small businesses. Start with a $500 assessment — delivered in 48 hours.",
+    url: "https://www.raintreems.com",
     type: "website",
     siteName: "Raintree Marketing Services",
   },

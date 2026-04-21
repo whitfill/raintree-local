@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getPostBySlug(slug);
   if (!post) return { title: "Not Found" };
   return {
-    title: `${post.title} | Raintree Local`,
+    title: `${post.title} | Raintree Marketing Services`,
     description: post.description,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: {
@@ -36,10 +36,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     <>
       <nav className="fixed top-0 w-full bg-warm-white/90 backdrop-blur-sm z-50 border-b border-forest/10">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="text-forest font-bold text-lg tracking-tight">Raintree Local</Link>
+          <Link href="/" className="text-forest font-bold text-lg tracking-tight">Raintree<span className="font-normal text-charcoal-light"> Marketing Services</span></Link>
           <div className="hidden md:flex items-center gap-6 text-sm">
             <Link href="/blog" className="text-charcoal-light hover:text-forest transition-colors">Blog</Link>
-            <Link href="/#contact" className="bg-forest text-white px-4 py-2 rounded-lg font-medium hover:bg-forest-light transition-colors">Free Audit</Link>
+            <Link href="/#contact" className="bg-forest text-white px-4 py-2 rounded-lg font-medium hover:bg-forest-light transition-colors">Get Started</Link>
           </div>
         </div>
       </nav>
@@ -64,10 +64,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
         <div className="mt-12 pt-8 border-t border-forest/10">
           <div className="bg-forest/5 rounded-xl p-6 text-center">
-            <h3 className="font-bold text-charcoal mb-2">Want help with your Google presence?</h3>
-            <p className="text-charcoal-light text-sm mb-4">We&apos;ll audit your business for free and show you exactly where you stand.</p>
+            <h3 className="font-bold text-charcoal mb-2">Want to know exactly where your business stands?</h3>
+            <p className="text-charcoal-light text-sm mb-4">A $500 Digital Visibility Assessment gives you a scored audit, specific gaps identified, and a 48-hour turnaround.</p>
             <Link href="/#contact" className="inline-block bg-forest text-white px-6 py-2.5 rounded-lg font-bold hover:bg-forest-light transition-colors text-sm">
-              Get Your Free Audit &rarr;
+              Request Your Assessment &rarr;
             </Link>
           </div>
         </div>

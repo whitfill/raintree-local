@@ -14,16 +14,16 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://raintreelocal.com"),
-  title: "Raintree Local | AI-Powered Local SEO for Small Businesses",
+  metadataBase: new URL("https://raintreems.com"),
+  title: "Raintree Marketing Services | Digital Visibility for Small Businesses",
   description:
-    "Raintree Local helps small businesses in home services and specialty retail get found on Google. Local SEO, GBP optimization, review management, and content — done for you.",
+    "Raintree Marketing Services helps small businesses get found on Google. Local SEO, Google Business Profile optimization, review management, and content — done for you.",
   openGraph: {
-    title: "Get Found on Google | Raintree Local",
-    description: "AI-powered local SEO for HVAC, plumbing, roofing, and specialty retail businesses. Free Google audit. No contracts.",
-    url: "https://raintreelocal.com",
+    title: "Get Found on Google | Raintree Marketing Services",
+    description: "Digital visibility for specialty retail, antique vendors, boutiques, and local businesses in Texas. Start with a $500 audit.",
+    url: "https://raintreems.com",
     type: "website",
-    siteName: "Raintree Local",
+    siteName: "Raintree Marketing Services",
   },
   twitter: {
     card: "summary_large_image",

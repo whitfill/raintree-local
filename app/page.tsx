@@ -7,10 +7,10 @@ export default function HomePage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        name: "Raintree Local",
+        name: "Raintree Marketing Services",
         description: "Digital visibility and local SEO for Round Top antique vendors, boutique retailers, dining, and lodging in Texas.",
-        url: "https://raintreelocal.com",
-        email: "mark@raintreelocal.com",
+        url: "https://raintreems.com",
+        email: "mark@raintreems.com",
         areaServed: "Texas",
         founder: { "@type": "Person", name: "Mark Whitfill" },
       }) }} />
@@ -18,7 +18,7 @@ export default function HomePage() {
       {/* Nav */}
       <nav className="fixed top-0 w-full bg-warm-white/90 backdrop-blur-sm z-50 border-b border-forest/10">
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-          <span className="text-forest font-bold text-lg tracking-tight">Raintree Local</span>
+          <span className="text-forest font-bold text-lg tracking-tight">Raintree<span className="font-normal text-charcoal-light"> Marketing Services</span></span>
           <div className="hidden md:flex items-center gap-6 text-sm">
             <a href="#assessment" className="text-charcoal-light hover:text-forest transition-colors">Assessment</a>
             <a href="#how-it-works" className="text-charcoal-light hover:text-forest transition-colors">How It Works</a>
@@ -30,7 +30,7 @@ export default function HomePage() {
 
       {/* ===== HERO ===== */}
       <section className="relative bg-forest text-white pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, #2D6A4F 0%, transparent 50%), radial-gradient(circle at 80% 50%, #C9A84C 0%, transparent 50%)" }} />
+        <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, #6B8A3A 0%, transparent 50%), radial-gradient(circle at 80% 50%, #96D2D2 0%, transparent 50%)" }} />
         <div className="relative max-w-4xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
             Your buyers are searching.<br />Are they finding you?
@@ -347,7 +347,7 @@ export default function HomePage() {
       <section className="bg-forest/5 py-20">
         <div className="max-w-3xl mx-auto px-6">
           <div className="text-center mb-8">
-            <span className="text-gold text-xs font-semibold uppercase tracking-[0.2em]">About Raintree Local</span>
+            <span className="text-gold text-xs font-semibold uppercase tracking-[0.2em]">About Raintree Marketing Services</span>
             <h2 className="text-3xl md:text-4xl font-bold text-charcoal mt-3">
               Built inside the community it serves.
             </h2>
@@ -357,14 +357,14 @@ export default function HomePage() {
               I spent a decade running Round Top Wifi — the wireless internet infrastructure for the show grounds. That means I know this community from the inside. I know the vendors, the venues, the show rhythm, and what these businesses actually need. I&apos;m not a marketing agency that found Round Top in a Google search.
             </p>
             <p>
-              Raintree Local applies enterprise-level digital strategy — the kind I learned managing corporate accounts at Nortel Networks — to the businesses that have always deserved it but could never access it at a price that made sense.
+              Raintree Marketing Services applies enterprise-level digital strategy — the kind I learned managing corporate accounts at Nortel Networks — to the businesses that have always deserved it but could never access it at a price that made sense.
             </p>
             <p>
               The assessment is the starting point because it&apos;s honest. You shouldn&apos;t hire anyone before you know where your gaps actually are. We find out first, then we decide together what to do about it.
             </p>
           </div>
           <p className="text-sm text-charcoal-light mt-8 border-t border-forest/10 pt-6">
-            <strong className="text-charcoal">Mark Whitfill</strong> · Founder, Raintree Local · Central Texas · mark@raintreelocal.com
+            <strong className="text-charcoal">Mark Whitfill</strong> · Founder, Raintree Marketing Services · Central Texas · mark@raintreems.com
           </p>
         </div>
       </section>
@@ -408,7 +408,7 @@ export default function HomePage() {
               <p className="text-sm text-white/40">No obligation beyond the assessment fee. Credited toward any full engagement.</p>
             </div>
             <form
-              action="mailto:mark@raintreelocal.com"
+              action="mailto:mark@raintreems.com"
               method="POST"
               encType="text/plain"
               className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 space-y-4 border border-white/20"
@@ -461,7 +461,7 @@ export default function HomePage() {
                 <label className="block text-xs text-white/60 mb-1">How did you hear about us? <span className="opacity-50">(optional)</span></label>
                 <input type="text" name="referral" className="w-full bg-white/10 border border-white/20 rounded-lg px-3 py-2.5 text-sm text-white placeholder-white/30 focus:outline-none focus:border-gold" />
               </div>
-              <input type="hidden" name="_subject" value="Assessment Request — Raintree Local" />
+              <input type="hidden" name="_subject" value="Assessment Request — Raintree Marketing Services" />
               <button type="submit" className="w-full bg-gold text-forest-dark py-3 rounded-xl font-bold text-lg hover:bg-gold-dark transition-colors">
                 Request My Assessment &rarr;
               </button>
@@ -473,8 +473,8 @@ export default function HomePage() {
       {/* ===== FOOTER ===== */}
       <footer className="bg-forest-dark text-white/40 py-8">
         <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
-          <p>&copy; {new Date().getFullYear()} Raintree Local. All rights reserved.</p>
-          <a href="mailto:mark@raintreelocal.com" className="hover:text-gold transition-colors">mark@raintreelocal.com</a>
+          <p>&copy; {new Date().getFullYear()} Raintree Marketing Services. All rights reserved.</p>
+          <a href="mailto:mark@raintreems.com" className="hover:text-gold transition-colors">mark@raintreems.com</a>
         </div>
       </footer>
     </>

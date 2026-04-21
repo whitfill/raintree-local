@@ -219,14 +219,14 @@ export default function HomePage() {
             <h2 className="text-3xl md:text-4xl font-bold mt-3">Start with an assessment. Everything else follows.</h2>
             <p className="text-white/60 mt-3">Both assessments are $500. Most clients do one, then come back for the other.</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-4 gap-5">
             {/* Visibility Assessment */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <p className="text-gold text-xs font-semibold uppercase tracking-wider mb-4">Start Here</p>
-              <h3 className="text-xl font-bold mb-1">Digital Visibility Assessment</h3>
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-7 border border-white/20">
+              <p className="text-gold text-xs font-semibold uppercase tracking-wider mb-4">Option 1</p>
+              <h3 className="text-lg font-bold mb-1">Digital Visibility Assessment</h3>
               <p className="text-3xl font-bold text-gold mt-3 mb-1">$500</p>
-              <p className="text-sm text-white/60 mb-6">One-time. Delivered in 48 hours.</p>
-              <ul className="space-y-2 text-sm text-white/80 mb-8">
+              <p className="text-sm text-white/60 mb-5">One-time. Delivered in 48 hours.</p>
+              <ul className="space-y-2 text-sm text-white/80 mb-7">
                 {[
                   "Full audit of Google, social & website",
                   "Visibility Score across 5 dimensions",
@@ -241,18 +241,18 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
-              <a href="#contact" className="block text-center border-2 border-gold text-gold py-3 rounded-xl font-bold hover:bg-gold hover:text-forest-dark transition-colors">
+              <a href="#contact" className="block text-center border-2 border-gold text-gold py-3 rounded-xl font-bold hover:bg-gold hover:text-forest-dark transition-colors text-sm">
                 Get Started &rarr;
               </a>
             </div>
 
             {/* AI Assessment */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
-              <p className="text-gold text-xs font-semibold uppercase tracking-wider mb-4">Start Here</p>
-              <h3 className="text-xl font-bold mb-1">AI Readiness Assessment</h3>
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-7 border border-white/20">
+              <p className="text-gold text-xs font-semibold uppercase tracking-wider mb-4">Option 2</p>
+              <h3 className="text-lg font-bold mb-1">AI Readiness Assessment</h3>
               <p className="text-3xl font-bold text-gold mt-3 mb-1">$500</p>
-              <p className="text-sm text-white/60 mb-6">One-time. Delivered in 48 hours.</p>
-              <ul className="space-y-2 text-sm text-white/80 mb-8">
+              <p className="text-sm text-white/60 mb-5">One-time. Delivered in 48 hours.</p>
+              <ul className="space-y-2 text-sm text-white/80 mb-7">
                 {[
                   "45-minute Zoom discovery call",
                   "Workflow & tool stack analysis",
@@ -267,28 +267,27 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
-              <a href="#contact" className="block text-center border-2 border-gold text-gold py-3 rounded-xl font-bold hover:bg-gold hover:text-forest-dark transition-colors">
+              <a href="#contact" className="block text-center border-2 border-gold text-gold py-3 rounded-xl font-bold hover:bg-gold hover:text-forest-dark transition-colors text-sm">
                 Get Started &rarr;
               </a>
             </div>
 
-            {/* Growth Package */}
-            <div className="bg-white text-charcoal rounded-2xl p-8 shadow-xl relative">
-              <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-forest-dark text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full">Full Engagement</span>
-              <p className="text-gold text-xs font-semibold uppercase tracking-wider mb-4 mt-2">After the Assessment</p>
-              <h3 className="text-xl font-bold mb-1">Growth Package</h3>
-              <p className="text-sm text-charcoal-light mb-3">90-day program. Real results before the next quarter.</p>
-              <p className="text-3xl font-bold text-forest mt-3 mb-1">$3,500<span className="text-base font-normal text-charcoal-light"> / 90 days</span></p>
-              <p className="text-sm text-charcoal-light mb-6">Assessment fee credited if you sign within 30 days.</p>
-              <ul className="space-y-2 text-sm text-charcoal-light mb-8">
+            {/* Combo */}
+            <div className="bg-white text-charcoal rounded-2xl p-7 shadow-xl relative">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-gold text-forest-dark text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full whitespace-nowrap">Best Value</span>
+              <p className="text-gold text-xs font-semibold uppercase tracking-wider mb-4 mt-2">Option 3</p>
+              <h3 className="text-lg font-bold mb-1">Full Business Audit</h3>
+              <p className="text-sm text-charcoal-light mb-2">Both assessments. Complete picture.</p>
+              <p className="text-3xl font-bold text-forest mt-3 mb-1">$750</p>
+              <p className="text-sm text-charcoal-light mb-5">Save $250 vs. buying separately.</p>
+              <ul className="space-y-2 text-sm text-charcoal-light mb-7">
                 {[
-                  "Everything in your assessment, plus:",
-                  "Full implementation of top recommendations",
-                  "Google Business Profile optimization",
-                  "Local SEO content (monthly)",
-                  "Review generation system",
-                  "Monthly performance reports",
-                  "Direct access via email/text",
+                  "Everything in both assessments:",
+                  "Digital Visibility audit & score",
+                  "AI Readiness workflow analysis",
+                  "Two 30-minute walkthrough calls",
+                  "Combined action plan & priorities",
+                  "Credited toward any full engagement",
                 ].map((item, i) => (
                   <li key={item} className={`flex items-start gap-2 ${i === 0 ? "font-semibold text-charcoal" : ""}`}>
                     <span className="text-forest mt-0.5">&#10003;</span>
@@ -296,8 +295,36 @@ export default function HomePage() {
                   </li>
                 ))}
               </ul>
-              <a href="#contact" className="block text-center bg-forest text-white py-3 rounded-xl font-bold hover:bg-forest-light transition-colors">
-                Request Your Assessment &rarr;
+              <a href="#contact" className="block text-center bg-forest text-white py-3 rounded-xl font-bold hover:bg-forest-light transition-colors text-sm">
+                Get the Full Audit &rarr;
+              </a>
+            </div>
+
+            {/* Growth Package */}
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-7 border border-white/20">
+              <p className="text-gold text-xs font-semibold uppercase tracking-wider mb-4">Option 4</p>
+              <h3 className="text-lg font-bold mb-1">Growth Package</h3>
+              <p className="text-sm text-white/60 mb-2">90-day full engagement.</p>
+              <p className="text-3xl font-bold text-gold mt-3 mb-1">$3,500</p>
+              <p className="text-sm text-white/60 mb-5">Assessment credited if you sign within 30 days.</p>
+              <ul className="space-y-2 text-sm text-white/80 mb-7">
+                {[
+                  "Everything in your assessment, plus:",
+                  "Full implementation of recommendations",
+                  "Google Business Profile optimization",
+                  "Local SEO content (monthly)",
+                  "Review generation system",
+                  "Monthly performance reports",
+                  "Direct access via email/text",
+                ].map((item, i) => (
+                  <li key={item} className={`flex items-start gap-2 ${i === 0 ? "font-semibold" : ""}`}>
+                    <span className="text-gold mt-0.5">&#10003;</span>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <a href="#contact" className="block text-center border-2 border-gold text-gold py-3 rounded-xl font-bold hover:bg-gold hover:text-forest-dark transition-colors text-sm">
+                Request Proposal &rarr;
               </a>
             </div>
           </div>
@@ -421,7 +448,7 @@ export default function HomePage() {
                   <option value="" className="text-charcoal">Select...</option>
                   <option value="Digital Visibility Assessment" className="text-charcoal">Digital Visibility Assessment — &ldquo;Buyers can&apos;t find me online&rdquo;</option>
                   <option value="AI Readiness Assessment" className="text-charcoal">AI Readiness Assessment — &ldquo;I&apos;m drowning in manual work&rdquo;</option>
-                  <option value="Both" className="text-charcoal">Both assessments</option>
+                  <option value="Full Business Audit ($750)" className="text-charcoal">Full Business Audit — Both assessments ($750, save $250)</option>
                   <option value="Not sure" className="text-charcoal">Not sure — help me decide</option>
                 </select>
               </div>

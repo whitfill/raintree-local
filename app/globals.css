@@ -1,16 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  --color-forest: #4B5A3C;
-  --color-forest-light: #6B8A3A;
-  --color-forest-dark: #3A4830;
-  --color-warm-white: #FAFAF7;
-  --color-gold: #78A52D;
-  --color-gold-dark: #5A8020;
-  --color-rain: #96D2D2;
-  --color-leaf: #A5C369;
-  --color-charcoal: #2D2A26;
+  /* Matched to logo: dark olive trunk, leaf greens, teal raindrops */
+  --color-forest-dark:    #2E3D22;   /* trunk / deepest */
+  --color-forest:         #3D4F2A;   /* primary dark green */
+  --color-forest-light:   #6B8A3A;   /* leaf green */
+  --color-leaf:           #82B840;   /* bright tagline green */
+  --color-leaf-light:     #A5C869;   /* soft accent */
+  --color-rain:           #5BBCC4;   /* teal raindrop */
+  --color-rain-light:     #9DD9DF;   /* soft teal */
+  --color-warm-white:     #FAFAF7;
+  --color-off-white:      #F2F4EE;
+  --color-charcoal:       #2D2A26;
+  --color-charcoal-mid:   #4A4640;
   --color-charcoal-light: #6B6560;
+  /* Keep gold aliases pointing to leaf for backwards compat */
+  --color-gold:           #82B840;
+  --color-gold-dark:      #6B9A2D;
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
